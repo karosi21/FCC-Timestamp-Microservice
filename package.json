@@ -1,25 +1,23 @@
 {
   "name": "unix-timestamp",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/karosi21/FCC-Timestamp-Microservice.git"
+    "url": "https://github.com/karosi21/FCC-Timestamp-Microservice"
   },
   "author": "Karosi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/karosi21/FCC-Timestamp-Microservice/issues"
+    "url": "https://github.com/karosi21/FCC-Timestamp-Microservice/"
   },
   "homepage": "https://github.com/karosi21/FCC-Timestamp-Microservice#readme",
   "dependencies": {
     "express": "^4.14.0",
     "moment": "^2.15.2"
-  },
-  "devDependencies": {},
-  "description": ""
+  }
 }
