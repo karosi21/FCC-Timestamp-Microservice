@@ -7,7 +7,7 @@ var app = express();
 app.set('port',process.env.PORT || 3000)
 app.use(express.static(path.resolve(__dirname,'public')));
 app.get("/:unixtimestamp", (req,res) => {
-	var time  = moment(req.params.unixtimestamp,"MM DD, YYYY",true)
+	var time  = moment(req.params.unixtimestamp,"MMMM DD, YYYY",true)
 
 	if (!time.isValid()) {
 		time = moment.unix(req.params.unixtimestamp);
@@ -20,8 +20,9 @@ app.get("/:unixtimestamp", (req,res) => {
 		});
 	}
 	res.json({
-		"humanunderstanding":time.format("MM DD, YYYY"),
-		"unix":time.format("X")
+		"unix":time.format("X"),
+		"humanunderstanding":time.format("MMMM DD, YYYY")
+		
 	});
 	// res.end();
 }).listen(app.get('port'), () => {
